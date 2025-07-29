@@ -1,4 +1,4 @@
-package LinkedList;
+package LinkedList.SinglyLL.Basics;
 
 public class DeleteNode {
     static class ListNode {

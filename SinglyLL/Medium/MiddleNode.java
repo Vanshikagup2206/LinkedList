@@ -1,4 +1,4 @@
-package LinkedList.Medium;
+package LinkedList.SinglyLL.Medium;
 
 public class MiddleNode {
     

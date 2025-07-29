@@ -1,6 +1,6 @@
-package LinkedList;
+package LinkedList.SinglyLL.Basics;
 
-public class DeleteAtFirst {
+public class InsertAtFirst {
     static class ListNode {
         int val;
         ListNode next;
@@ -20,12 +20,15 @@ public class DeleteAtFirst {
             next = next1;
         }
     }
-    public ListNode deleteHead(ListNode head) {
+    public ListNode insertAtHead(ListNode head, int X) {
+        ListNode newNode = new ListNode(X);
         if(head == null){
-            return head;
+            head = newNode;
+            return newNode;
         }
-        head = head.next;
-        return head;
+        newNode.next = head;
+        head = newNode;
+        return newNode;
     }
     public void printList(ListNode head){
         if(head == null){
@@ -40,9 +43,9 @@ public class DeleteAtFirst {
         System.out.print("NULL");
     }
     public static void main(String args[]){
-        ListNode head = new ListNode(1, new ListNode(2));
-        DeleteAtFirst sol = new DeleteAtFirst();
-        head = sol.deleteHead(head);
+        ListNode head = new ListNode(1);
+        InsertAtFirst sol = new InsertAtFirst();
+        head = sol.insertAtHead(head, 7);
         sol.printList(head);
     }
 }

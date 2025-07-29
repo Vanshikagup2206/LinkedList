@@ -1,4 +1,4 @@
-package LinkedList;
+package LinkedList.SinglyLL.Basics;
 
 public class SearchInLL {
     static class ListNode {
